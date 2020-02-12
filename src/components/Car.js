@@ -7,8 +7,8 @@ import { Container, Paper, Chip } from '@material-ui/core'
 const Car = (props) => {
     var car = cars.find(car =>car.id==props.match.params.id)
     return (
-    <Container>
-        <Paper>
+    <Container fixed maxWidth="xs">
+        <Paper elevation={3}>
             <h1>{car.Name}</h1>
         <Chip label = {`id: ${car.id}`}></Chip>
         <Chip label = {`Name: ${car.Name}`}></Chip> 
